@@ -1,0 +1,54 @@
+[
+  {
+    "heading": "SIGNAL TRACE",
+    "side": "NET / 07",
+    "type": "TRC",
+    "records": [
+      "CARRIER.DROP",
+      "PARITY.CHECK",
+      "SIGNAL.ECHO",
+      "PACKET.LOSS",
+      "SCAN.RESUME",
+      "LOCK.SEARCH"
+    ]
+  },
+  {
+    "heading": "WARNING",
+    "side": "E-041  /  CRITICAL",
+    "type": "ERR",
+    "records": [
+      "BARRIER.BREACH",
+      "FIELD.UNSTABLE",
+      "LIMIT.EXCEEDED",
+      "RESCUE.RETRY",
+      "LINK.DEGRADED",
+      "RELAY.ARMED"
+    ]
+  },
+  {
+    "heading": "PHASE SHIFT",
+    "side": "SCAN / 04",
+    "type": "PHS",
+    "records": [
+      "PHASE.OFFSET",
+      "VECTOR.DRIFT",
+      "CLOCK.DESYNC",
+      "DELTA.LIMIT",
+      "PULSE.DETECT",
+      "SCAN.RETRY"
+    ]
+  },
+  {
+    "heading": "BOUNDARY LINK",
+    "side": "CH 07 / LIVE",
+    "type": "LNK",
+    "records": [
+      "BOUNDARY.OPEN",
+      "RELAY.HOLD",
+      "PORT.RESYNC",
+      "ROUTE.RETRY",
+      "STREAM.DELAY",
+      "BUFFER.FULL"
+    ]
+  }
+]

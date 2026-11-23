@@ -1,0 +1,44 @@
+[output]
+width = 3840
+height = 2160
+fps = 60
+encoder = "auto"          # auto | nvenc | libx264
+
+[speed]
+rate = 1.0                # Loop duration is approximately 13.6 / rate seconds.
+
+[dof]
+strength = 1.0            # Depth of field multiplier.
+focus_pull = true         # Follow the moving point of focus.
+
+[glitch]
+enabled = false
+style = "scanline"        # scanline | jitter | displacement
+
+[[hud.panels]]
+id = "trace"
+heading = "SIGNAL TRACE"
+side = "NET / 07"
+type = "TRC"
+records = ["CARRIER.DROP", "PARITY.CHECK", "SIGNAL.ECHO", "PACKET.LOSS", "SCAN.RESUME", "LOCK.SEARCH"]
+
+[[hud.panels]]
+id = "warning"
+heading = "WARNING"
+side = "E-041  /  CRITICAL"
+type = "ERR"
+records = ["BARRIER.BREACH", "FIELD.UNSTABLE", "LIMIT.EXCEEDED", "RESCUE.RETRY", "LINK.DEGRADED", "RELAY.ARMED"]
+
+[[hud.panels]]
+id = "phase"
+heading = "PHASE SHIFT"
+side = "SCAN / 04"
+type = "PHS"
+records = ["PHASE.OFFSET", "VECTOR.DRIFT", "CLOCK.DESYNC", "DELTA.LIMIT", "PULSE.DETECT", "SCAN.RETRY"]
+
+[[hud.panels]]
+id = "boundary"
+heading = "BOUNDARY LINK"
+side = "CH 07 / LIVE"
+type = "LNK"
+records = ["BOUNDARY.OPEN", "RELAY.HOLD", "PORT.RESYNC", "ROUTE.RETRY", "STREAM.DELAY", "BUFFER.FULL"]
